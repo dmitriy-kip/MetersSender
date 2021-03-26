@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Домовод</string>
+    <string name="meters">Показания счетчиков</string>
+    <string name="settings">Настройки</string>
+    <string name="login">progmatik</string><!--progmatik/test-->
+    <string name="password">progmatikpa$$wd</string><!--progmatikpa$$wd/test123-->
+</resources>

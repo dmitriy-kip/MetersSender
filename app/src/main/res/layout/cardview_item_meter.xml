@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card:cardElevation="0dp"
+        card:cardUseCompatPadding="false">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvServiceName"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="ГВС"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tvMeterNumber"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="№1065160135"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="10dp">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="дата показаний:"
+                            android:textColor="@color/colorBlack"
+                            android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/tvDate"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:text="5 окт. 2017"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:id="@+id/tvInd"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="34"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+
+                            />
+                        <TextView
+                            android:id="@+id/tvIndUnitName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="м3"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:paddingLeft="5dp"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/btnHist"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorWhite"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/btnInd"
+                        android:text="Новые показания"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/cardview_btnind"
+                        android:textColor="@color/colorWhite"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorBlack"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
